@@ -1,13 +1,12 @@
 
-import HelloClass from './Component/HelloClass';
-import Practice01 from './Component/Practice01';
+import Form from './Component/Form';
 
 
 function App() {
   return (
     <div className="App">
-     <Practice01></Practice01>
-     <HelloClass></HelloClass>
+     <Form></Form>
+    
     </div>
   );
 }

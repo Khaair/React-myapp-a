@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './style.module.css';
-function Practice01() {
+function Form() {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -26,19 +26,20 @@ function Practice01() {
     
       const handleSubmit = (e) => {
         console.log(objInfo)
+     
        
         e.preventDefault();
         }
   return(
 <div>
-  <h3 className={styles.someClassInCssModule}>Using CSS to style an HTML Form</h3>
+  <h3 className={styles.some}>Registration</h3>
   <div>
     <form action="" onSubmit={handleSubmit}>
       <label htmlFor="fname">First Name</label>
       <input type="text"  id="fname" value={name} name="firstname" onChange={handleNameChange} placeholder="Your name.." />
-      <label htmlFor="email">Last Name</label>
+      <label htmlFor="email">Email</label>
       <input type="text" id="email" value={email} name="email" onChange={handleEmailChange}  placeholder="Your email" />
-      <label htmlFor="password">Last Name</label>
+      <label htmlFor="password">Password</label>
       <input type="text" id="password" value={password} name="password" onChange={handlePasswordChange}  placeholder="Your password" />
       
       <input type="submit"  defaultValue="Submit" />
@@ -46,6 +47,9 @@ function Practice01() {
   </div>
 
   <h1>{name}</h1>
+  <h1>{email}</h1>
+  <h1>{password}</h1>
+  
 </div>
 
 
@@ -54,4 +58,4 @@ function Practice01() {
   )
 }
 
-export default Practice01;
+export default Form;
