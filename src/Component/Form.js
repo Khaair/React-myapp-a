@@ -32,7 +32,7 @@ function Form() {
         }
   return(
 <div>
-  <h3 className={styles.some}>Registration</h3>
+  <h3 className={styles.some}>Registration Form</h3>
   <div>
     <form action="" onSubmit={handleSubmit}>
       <label htmlFor="fname">First Name</label>
